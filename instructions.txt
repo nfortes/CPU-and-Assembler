@@ -1,0 +1,13 @@
+// Lili Fortes
+// I pledge my honor that I have abided by the Stevens Honor System.
+.text
+    LDR X1, [X0, 3] // Load value at address 3 to X1 (X1 = 3)
+    LDR X2, [X0, X1] // Load value at address 3 to X2 (X2 = 3)
+    ADD X0, X1, X2 // Add X1 + X2 (X0 = 6)
+    ADD X3, X3, 3 // Add X3 + 3 (X3 = 3)
+    SUB X2, X1, X3 // Subtract X1 - X3 (X2 = 0)
+    SUB X0, X0, 3
+
+.data
+    0: 0, 1, 2, 3, 4, 5
+    7: 32, 4, 6, 52, 3 // you can comment data too !
